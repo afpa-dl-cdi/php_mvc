@@ -36,5 +36,7 @@ switch ($controller)
         break;
     default:
         include_once("Controllers/accueilCtrl.php");
+        $accueilCtrl = new AccueilCtrl();
+        $accueilCtrl->launchView();
         break;
 }

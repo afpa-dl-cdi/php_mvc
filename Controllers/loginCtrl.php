@@ -14,10 +14,11 @@ class LoginCtrl
 
     /**
     Lancement de la page "html"
+    TODO : à factoriser dans une classe mère
+
     */
     public function launchView() 
     {
-        require('./Views/templates/header.php');
-       require_once('./Views/loginView.php'); 
+        require_once('./Views/loginView.php'); 
     }
 }
