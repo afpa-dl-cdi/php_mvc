@@ -16,8 +16,9 @@ class UserCtrl
     public function verifFormulaire() 
     {
         // récupération du login et mdp 
-        $login = isset($_POST['login']);
-        $mdp = isset($_POST['mdp']);
+      if (isset($_POST['login'])) $login = $_POST['login'];
+      if (isset($_POST['mdp'])) $mdp = $_POST['mdp'];
+
         //TODO : vérifier que le login et mdp sont correct
         require_once('Models/userMdl.php');
         $authStatus = UserMdl::checkUser($login, $mdp);           // retourne un booléen d'un appel à la classe static
