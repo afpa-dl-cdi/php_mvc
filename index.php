@@ -27,6 +27,11 @@ switch ($controller)
         $userCtrl = new UserCtrl();
         $userCtrl->verifFormulaire();
         break;
+    case 'profiluser':
+        include_once("Controllers/userCtrl.php");
+        $userCtrl = new UserCtrl();
+        $userCtrl->profilUser();
+
     case 'tournee':
         include_once("Controllers/tourneeCtrl.php");
         //TODO
