@@ -21,7 +21,7 @@ switch ($controller)
         $loginCtrl->launchView();                 // appel au lancement de la vue         
         break;
     case 'verifuser':
-        // chargement du controller et du model 
+        // chargement du controller
         include_once("Controllers/userCtrl.php");
         //TODO 
         break;
