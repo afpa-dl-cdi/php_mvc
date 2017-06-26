@@ -9,7 +9,7 @@
     <body>
 
         <h1>Vue login</h1>
-        <form action="userCtrl.php" method="POST">
+        <form action="index.php?controller=verifuser" method="POST">
             <input type="text" name="login" value="" placeholder="Votre login">
             <input type="password" name="mdp" value="" placeholder="Votre mdp">
             <button type="submit">Connexion</button>

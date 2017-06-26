@@ -24,7 +24,8 @@ switch ($controller)
     case 'verifuser':
         // chargement du controller
         include_once("Controllers/userCtrl.php");
-        //TODO 
+        $userCtrl = new UserCtrl();
+        $userCtrl->verifFormulaire();
         break;
     case 'tournee':
         include_once("Controllers/tourneeCtrl.php");
