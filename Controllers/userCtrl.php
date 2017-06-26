@@ -22,6 +22,7 @@ class UserCtrl
         require_once('Models/userMdl.php');
         $authStatus = UserMdl::checkUser($login, $mdp);           // retourne un booléen d'un appel à la classe static
         // si ok lancer la vue affichant la page d'accueil      (pour cela lancer l'url avec le bon controller)
+        var_dump($authStatus);
         //sinon lancer la page login
     } 
 
