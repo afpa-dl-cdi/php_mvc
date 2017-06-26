@@ -8,7 +8,8 @@ sur les controllers.
 /** 
 récupérer la requête de l'utilisateur 
 */
-$controller = $_GET['controller']; // l'appel au site se fera toujours par l'url index.php?controller=moncontroller
+if (isset($_GET['controller'])) $controller = $_GET['controller']; // l'appel au site se fera toujours par l'url index.php?controller=moncontroller
+else $controller = '';
 
 /** 
 rediriger sur le bon controller
