@@ -7,7 +7,7 @@ class UserMdl
 {
     public function __construct() 
     {
-        include_once('./databaseConf.php');
+        // include_once('./databaseConf.php');
     }
 
     /**
