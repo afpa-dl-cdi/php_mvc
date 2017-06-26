@@ -20,7 +20,7 @@ class UserMdl
     {
         require_once('./Models/dbConnector.php');
         $pdo = DbConnector::connect();
-        $query = $pdo->query("SELECT id FROM users WHERE login=$login AND mdp = $mdp");
+        $query = $pdo->query("SELECT * FROM Armateur WHERE LoginArma='$login' AND Motdepassearma = '$mdp'");
         $result = $query->fetch();
         if (count($result) > 0) return true;
         else return false;
