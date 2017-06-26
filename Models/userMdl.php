@@ -15,6 +15,7 @@ class UserMdl
     @param $login champ utilisateur
     @param $mdp champ mot de passe
     @return resultat sous forme de tableau de la requête
+    @Don't forget the quotes
     */
     static public function checkUser($login, $mdp) 
     {
